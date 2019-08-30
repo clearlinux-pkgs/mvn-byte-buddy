@@ -4,7 +4,7 @@
 #
 Name     : mvn-byte-buddy
 Version  : 1.8.15
-Release  : 2
+Release  : 3
 URL      : https://github.com/raphw/byte-buddy/archive/byte-buddy-1.8.15.tar.gz
 Source0  : https://github.com/raphw/byte-buddy/archive/byte-buddy-1.8.15.tar.gz
 Source1  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.8.15/byte-buddy-agent-1.8.15.jar
@@ -15,6 +15,8 @@ Source5  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-parent/1.8.15
 Source6  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-parent/1.9.7/byte-buddy-parent-1.9.7.pom
 Source7  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar
 Source8  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.pom
+Source9  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.9.7/byte-buddy-1.9.7.jar
+Source10  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.9.7/byte-buddy-1.9.7.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -76,6 +78,12 @@ cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-budd
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.15
 cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.9.7
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.9.7/byte-buddy-1.9.7.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.9.7
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.9.7/byte-buddy-1.9.7.pom
+
 
 %files
 %defattr(-,root,root,-)
@@ -90,6 +98,8 @@ cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-budd
 /usr/share/java/.m2/repository/net/bytebuddy/byte-buddy-parent/1.9.7/byte-buddy-parent-1.9.7.pom
 /usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar
 /usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.pom
+/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.9.7/byte-buddy-1.9.7.jar
+/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.9.7/byte-buddy-1.9.7.pom
 
 %files license
 %defattr(0644,root,root,0755)
