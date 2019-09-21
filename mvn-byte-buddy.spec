@@ -4,7 +4,7 @@
 #
 Name     : mvn-byte-buddy
 Version  : 1.8.15
-Release  : 5
+Release  : 6
 URL      : https://github.com/raphw/byte-buddy/archive/byte-buddy-1.8.15.tar.gz
 Source0  : https://github.com/raphw/byte-buddy/archive/byte-buddy-1.8.15.tar.gz
 Source1  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.8.15/byte-buddy-agent-1.8.15.jar
@@ -15,16 +15,19 @@ Source5  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.9.7/b
 Source6  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.9.7/byte-buddy-agent-1.9.7.pom
 Source7  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-parent/1.8.15/byte-buddy-parent-1.8.15.pom
 Source8  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-parent/1.8.21/byte-buddy-parent-1.8.21.pom
-Source9  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-parent/1.8.5/byte-buddy-parent-1.8.5.pom
-Source10  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-parent/1.9.7/byte-buddy-parent-1.9.7.pom
-Source11  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar
-Source12  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.pom
-Source13  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.21/byte-buddy-1.8.21.jar
-Source14  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.21/byte-buddy-1.8.21.pom
-Source15  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.5/byte-buddy-1.8.5.jar
-Source16  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.5/byte-buddy-1.8.5.pom
-Source17  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.9.7/byte-buddy-1.9.7.jar
-Source18  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.9.7/byte-buddy-1.9.7.pom
+Source9  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-parent/1.8.22/byte-buddy-parent-1.8.22.pom
+Source10  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-parent/1.8.5/byte-buddy-parent-1.8.5.pom
+Source11  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-parent/1.9.7/byte-buddy-parent-1.9.7.pom
+Source12  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar
+Source13  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.pom
+Source14  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.21/byte-buddy-1.8.21.jar
+Source15  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.21/byte-buddy-1.8.21.pom
+Source16  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.22/byte-buddy-1.8.22.jar
+Source17  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.22/byte-buddy-1.8.22.pom
+Source18  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.5/byte-buddy-1.8.5.jar
+Source19  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.5/byte-buddy-1.8.5.pom
+Source20  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.9.7/byte-buddy-1.9.7.jar
+Source21  : https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.9.7/byte-buddy-1.9.7.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -89,35 +92,44 @@ cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-budd
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy-parent/1.8.21
 cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy-parent/1.8.21/byte-buddy-parent-1.8.21.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy-parent/1.8.22
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy-parent/1.8.22/byte-buddy-parent-1.8.22.pom
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy-parent/1.8.5
-cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy-parent/1.8.5/byte-buddy-parent-1.8.5.pom
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy-parent/1.8.5/byte-buddy-parent-1.8.5.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy-parent/1.9.7
-cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy-parent/1.9.7/byte-buddy-parent-1.9.7.pom
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy-parent/1.9.7/byte-buddy-parent-1.9.7.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.15
-cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar
+cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.15
-cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.pom
+cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.21
-cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.21/byte-buddy-1.8.21.jar
+cp %{SOURCE14} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.21/byte-buddy-1.8.21.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.21
-cp %{SOURCE14} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.21/byte-buddy-1.8.21.pom
+cp %{SOURCE15} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.21/byte-buddy-1.8.21.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.22
+cp %{SOURCE16} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.22/byte-buddy-1.8.22.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.22
+cp %{SOURCE17} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.22/byte-buddy-1.8.22.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.5
-cp %{SOURCE15} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.5/byte-buddy-1.8.5.jar
+cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.5/byte-buddy-1.8.5.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.5
-cp %{SOURCE16} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.5/byte-buddy-1.8.5.pom
+cp %{SOURCE19} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.5/byte-buddy-1.8.5.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.9.7
-cp %{SOURCE17} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.9.7/byte-buddy-1.9.7.jar
+cp %{SOURCE20} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.9.7/byte-buddy-1.9.7.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.9.7
-cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.9.7/byte-buddy-1.9.7.pom
+cp %{SOURCE21} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.9.7/byte-buddy-1.9.7.pom
 
 
 %files
@@ -133,12 +145,15 @@ cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/net/bytebuddy/byte-bud
 /usr/share/java/.m2/repository/net/bytebuddy/byte-buddy-agent/1.9.7/byte-buddy-agent-1.9.7.pom
 /usr/share/java/.m2/repository/net/bytebuddy/byte-buddy-parent/1.8.15/byte-buddy-parent-1.8.15.pom
 /usr/share/java/.m2/repository/net/bytebuddy/byte-buddy-parent/1.8.21/byte-buddy-parent-1.8.21.pom
+/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy-parent/1.8.22/byte-buddy-parent-1.8.22.pom
 /usr/share/java/.m2/repository/net/bytebuddy/byte-buddy-parent/1.8.5/byte-buddy-parent-1.8.5.pom
 /usr/share/java/.m2/repository/net/bytebuddy/byte-buddy-parent/1.9.7/byte-buddy-parent-1.9.7.pom
 /usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar
 /usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.pom
 /usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.21/byte-buddy-1.8.21.jar
 /usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.21/byte-buddy-1.8.21.pom
+/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.22/byte-buddy-1.8.22.jar
+/usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.22/byte-buddy-1.8.22.pom
 /usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.5/byte-buddy-1.8.5.jar
 /usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.8.5/byte-buddy-1.8.5.pom
 /usr/share/java/.m2/repository/net/bytebuddy/byte-buddy/1.9.7/byte-buddy-1.9.7.jar
